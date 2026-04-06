@@ -1,30 +1,17 @@
-# Simple Calculator Program
+def add(a, b):
+    return a + b
 
-print("Simple Calculator")
-print("1. Addition")
-print("2. Subtraction")
-print("3. Multiplication")
-print("4. Division")
+def sub(a, b):
+    return a - b
 
-choice = int(input("Enter your choice (1-4): "))
+def mul(a, b):
+    return a * b
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+def div(a, b):
+    return a / b
 
-if choice == 1:
-    print("Result =", num1 + num2)
-
-elif choice == 2:
-    print("Result =", num1 - num2)
-
-elif choice == 3:
-    print("Result =", num1 * num2)
-
-elif choice == 4:
-    if num2 != 0:
-        print("Result =", num1 / num2)
-    else:
-        print("Error: Division by zero is not allowed")
-
-else:
-    print("Invalid choice")
+if __name__ == "__main__":
+    print("Addition:", add(5, 3))
+    print("Subtraction:", sub(5, 3))
+    print("Multiplication:", mul(5, 3))
+    print("Division:", div(5, 3))
